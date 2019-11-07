@@ -12,7 +12,7 @@ export const Register = async (req, res) => {
   const existingUser = await Account.findOne({
     username
   });
-  console.log(existingUser);
+
   if (existingUser != null) {
     result = {
       ok: false,
