@@ -2,8 +2,7 @@ import Account from '../model/account';
 
 export const Register = async (req, res) => {
   const { username, password } = req.body;
-  console.log(username);
-  console.log(password);
+
   let result = {
     ok: null,
     error: null
